@@ -1,12 +1,14 @@
 
-def buildCheker = [:]
-def commonEmail = emailer()
-
 def emailer(){
   println(''' Hello everyon,
   Our jenins is out of space. Pleas take a look the jenkins server
   Thank you ''')
 }
+
+def buildCheker = [:]
+def commonEmail = emailer()
+
+
 
 node('master'){
   checkout scm
