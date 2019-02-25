@@ -10,5 +10,7 @@ node('master'){
     stage('checking for ') {
       println('I will clean up ')
     }
+  } else {
+    println("The disk usage below 80% nothing to clean")
   }
 }
