@@ -15,6 +15,7 @@ node('master'){
 
   if (buildCheker['size'].toInteger() > 10) {
     emailer()
+    sh 'echo $HOME '
   } else {
     println("The disk usage below 80% nothing to clean")
   }
