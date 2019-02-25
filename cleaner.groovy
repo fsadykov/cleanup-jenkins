@@ -1,5 +1,5 @@
 
-def diskUsage
+int diskUsage
 
 node('master'){
   diskUsage = sh(returnStdout: true, script: '''df -h | grep fscoding |awk '{print $5 + ""}' ''' )
